@@ -21,10 +21,10 @@ We use the same pre-processed data for RefCOCO/g/+ as [ReCLIP](https://github.co
 Download pre-processed data files via `gsutil cp gs://reclip-sanjays/reclip_data.tar.gz`, and extract the data using `tar -xvzf reclip_data.tar.gz`. This data does not include images, therefore also download the images for RefCOCO/g/+ from [http://images.cocodataset.org/zips/train2014.zip](http://images.cocodataset.org/zips/train2014.zip). 
 
 ### Caption Triplets
-Find them in [google drive]()
+We release the triplets files in [Huggingface](https://huggingface.co/datasets/CresCat01/RefCOCO-Triplets)
 
 ### LoRA Checkpoints
-Find them in [google drive]()
+They are also in [Huggingface](https://huggingface.co/datasets/CresCat01/RefCOCO-Triplets).
 
 ### VLA Fine-tuning Data
 For CLIP/FLAVA fine-tuning, you need to download the following datasets:
@@ -36,7 +36,7 @@ Please follow the instructions provided on each website to download the raw data
 
 After downloading the datasets, modify the configuration file `VLA_finetune/training/data_path.ini` according to the root directory of your downloaded data.
 
-For the `triplets_file` required for SWiG, it can be found in [google drive]().
+For the `triplets_file` required for SWiG, it can be found in [Huggingface](https://huggingface.co/datasets/CresCat01/RefCOCO-Triplets) (`SWiG_triplets.json`)
 
 
 ## Results with CLIP/FLAVA on RefCOCO/g/+
@@ -93,7 +93,6 @@ torchrun --nproc_per_node 8 --master_port 23452 -m VLA_finetune.training.main --
 ```
 
 ## TODO
-- Replace the placeholder Google Drive link
 - Upload code for Who's Waldo dataset
 
 ## Acknowledgements
