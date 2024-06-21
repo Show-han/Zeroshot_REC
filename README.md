@@ -2,6 +2,9 @@
 This repository contains the code for the paper [Zero-shot Referring Expression Comprehension via Structural Similarity Between Images and Captions](https://arxiv.org/pdf/2311.17048.pdf)
 (CVPR 2024).
 
+## News
+- *2024.06.22*: &nbsp;We upload the ChatGPT annotated caption triplets of RefCOCO/+/g on [Huggingface](https://huggingface.co/datasets/CresCat01/RefCOCO-Triplets). The same repo also includes the LoRA checkpoints for CLIP and FLAVA.
+
 ## Setup
 1. Create a new conda environment:
 ```
